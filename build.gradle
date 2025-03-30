@@ -1,0 +1,25 @@
+plugins {
+    id 'java'
+}
+
+group = 'net.thanon'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation("net.dv8tion:JDA:5.3.1")
+    //implementation("com.github.jwdeveloper.TikTok-Live-Java:Client:1.9.2-Release")
+    implementation("io.github.redouane59.twitter:twittered:2.23")
+    implementation 'com.github.twitch4j:twitch4j-util:1.24.0'
+    implementation("org.json:json:20250107")
+    implementation("io.github.cdimascio:dotenv-java:3.2.0")
+    implementation("org.slf4j:slf4j-api:2.0.17")
+    implementation("org.slf4j:slf4j-simple:2.0.17")
+}
+
+test {
+    useJUnitPlatform()
+}
