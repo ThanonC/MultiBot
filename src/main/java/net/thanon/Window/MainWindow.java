@@ -31,17 +31,6 @@ public class MainWindow extends JFrame implements ActionListener {
     @Override
     public void actionPerformed(ActionEvent e) {
         if(e.getSource().equals(startDC)) {
-            if(isDcBotOn != true) {
-                isDcBotOn = true;
-                startDC.setLabel(String.valueOf(isDcBotOn));
-                try {
-                    new Bot().start();
-                } catch (InterruptedException ex) {
-                    throw new RuntimeException(ex);
-                }
-            } else {
-                new Bot().shutdown();
-            }
         }
     }
 }

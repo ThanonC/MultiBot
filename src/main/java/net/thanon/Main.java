@@ -7,12 +7,12 @@ import java.io.IOException;
 
 public class Main {
     public static void main(String[] args) {
-        /*try {
-            //new Bot();
+        try {
+            new Bot();
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
-        }*/
-        //new net.thanon.Twitter.Bot();
+        }
+        new net.thanon.Twitter.Bot();
 
         new MainWindow();
     }
